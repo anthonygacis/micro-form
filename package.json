@@ -1,5 +1,5 @@
 {
-  "name": "micro-form",
+  "name": "@ageesea/micro-form",
   "version": "1.0.1",
   "description": "A micro helper for html forms",
   "main": "index.js",
