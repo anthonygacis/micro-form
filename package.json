@@ -1,14 +1,23 @@
 {
   "name": "micro-form",
   "version": "1.0.0",
-  "description": "",
+  "description": "A micro helper for html forms",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "simple", "form"
+    "simple",
+    "form"
   ],
   "author": "Anthony Gacis",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthonygacis/micro-form.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anthonygacis/micro-form/issues"
+  },
+  "homepage": "https://github.com/anthonygacis/micro-form#readme"
 }
