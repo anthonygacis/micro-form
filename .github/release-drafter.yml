@@ -7,17 +7,17 @@ template: |
   $CHANGES
 categories:
   - title: '💥 Breaking'
-    label: 'type: breaking'
+    label: 'breaking'
   - title: '🚀 New'
-    label: 'type: feature'
+    label: 'feature'
   - title: '🐛 Bug Fixes'
-    label: 'type: bug'
+    label: 'bug'
   - title: '🧰 Maintenance'
-    label: 'type: maintenance'
-  - title: '📄 Documentation'
-    label: 'type: docs'
+    label: 'maintenance'
+  - title: '📄 Chore'
+    label: 'chore'
   - title: '🤖 Dependency Updates'
-    label: 'type: dependencies'
+    label: 'dependencies'
 
 autolabeler:
   - label: 'chore'
@@ -30,7 +30,7 @@ autolabeler:
       - '/fix\/.+/'
     title:
       - '/fix/i'
-  - label: 'enhancement'
+  - label: 'feature'
     branch:
       - '/feature\/.+/'
 
