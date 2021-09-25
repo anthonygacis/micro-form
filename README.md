@@ -12,7 +12,7 @@ In your terminal, run
 
 ### Method: getFormValues(_formSelector, isExcludeEmpty=false_)
 
-A method that scans your html form inputs to create an object structure. It uses the name attribute as key and their value as value.
+A method that scans your html form inputs to create an object structure. It uses the name attribute as key and their value as value. It also support array-based names.
 
 ```html
 <!-- example.html -->
