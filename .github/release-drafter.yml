@@ -6,18 +6,33 @@ template: |
   # What's Changed
   $CHANGES
 categories:
-  - title: 'Breaking'
+  - title: '💥 Breaking'
     label: 'type: breaking'
-  - title: 'New'
+  - title: '🚀 New'
     label: 'type: feature'
-  - title: 'Bug Fixes'
+  - title: '🐛 Bug Fixes'
     label: 'type: bug'
-  - title: 'Maintenance'
+  - title: '🧰 Maintenance'
     label: 'type: maintenance'
-  - title: 'Documentation'
+  - title: '📄 Documentation'
     label: 'type: docs'
-  - title: 'Dependency Updates'
+  - title: '🤖 Dependency Updates'
     label: 'type: dependencies'
+
+autolabeler:
+  - label: 'chore'
+    files:
+      - '*.md'
+    branch:
+      - '/docs{0,1}\/.+/'
+  - label: 'bug'
+    branch:
+      - '/fix\/.+/'
+    title:
+      - '/fix/i'
+  - label: 'enhancement'
+    branch:
+      - '/feature\/.+/'
 
 version-resolver:
   major:
