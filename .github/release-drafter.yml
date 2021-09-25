@@ -24,7 +24,7 @@ autolabeler:
     files:
       - '*.md'
     branch:
-      - '/docs{0,1}\/.+/'
+      - '/docs\/.+/'
   - label: 'bug'
     branch:
       - '/fix\/.+/'
