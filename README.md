@@ -19,6 +19,8 @@ A method that scans your html form inputs to create an object structure. It uses
 <form id="form-employee">
     <input name="full_name" />   
     <input name="age" />   
+    <input name="accounts[]" />   
+    <input name="accounts[]" />   
 </form>
 ```
 
@@ -33,6 +35,9 @@ Output:
 ```obj
 {
     full_name: "Juan dela cruz",
-    age: 23
+    age: 23,
+    accounts: [
+        "value1", "value2"
+    ]
 }
 ```
