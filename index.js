@@ -23,4 +23,4 @@ const getFormValues = (formSelector, isExcludeEmpty = false) => {
     return output
 }
 
-export { getFormValues }
+module.exports = exports = { getFormValues }
