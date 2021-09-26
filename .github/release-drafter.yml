@@ -25,6 +25,7 @@ autolabeler:
       - '*.md'
     branch:
       - '/docs\/.+/'
+      - '/chore\/.+/'
   - label: 'bug'
     branch:
       - '/fix\/.+/'
