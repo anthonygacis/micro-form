@@ -4,19 +4,17 @@ const getFormValues = (formSelector, isExcludeEmpty = false) => {
     let output = {}
     if (formInputs.length) {
         formInputs.forEach(function (item, index) {
-            const v = (!isNaN(item.value) ? parseFloat(item.value) : item.value)
+            const v = (!isNaN(item.value) ? parseFloat(item.value.toString()) : item.value)
             const formName = item.getAttribute('name')
 
-            if (formName !== '') {
+            if (formName && formName !== '') {
                 if (isExcludeEmpty && v === '') return
 
-                if(formName){
-                    if (formName.includes('[]')) {
-                        let tempFormName = formName.replace('[]', '')
-                        output[tempFormName] = (!output[tempFormName] ? [v] : [...output[tempFormName], v])
-                    } else {
-                        output[formName] = v
-                    }
+                if (formName.includes('[]')) {
+                    let tempFormName = formName.replace('[]', '')
+                    output[tempFormName] = (!output[tempFormName] ? [v] : [...output[tempFormName], v])
+                } else {
+                    output[formName] = v
                 }
             }
         })
