@@ -10,11 +10,13 @@ const getFormValues = (formSelector, isExcludeEmpty = false) => {
             if (formName !== '') {
                 if (isExcludeEmpty && v === '') return
 
-                if (formName.includes('[]')) {
-                    let tempFormName = formName.replace('[]', '')
-                    output[tempFormName] = (!output[tempFormName] ? [v] : [...output[tempFormName], v])
-                } else {
-                    output[formName] = v
+                if(formName){
+                    if (formName.includes('[]')) {
+                        let tempFormName = formName.replace('[]', '')
+                        output[tempFormName] = (!output[tempFormName] ? [v] : [...output[tempFormName], v])
+                    } else {
+                        output[formName] = v
+                    }
                 }
             }
         })
