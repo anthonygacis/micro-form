@@ -2,8 +2,8 @@
   "name": "@ageesea/micro-form",
   "version": "1.0.9",
   "description": "A micro helper for html forms",
-  "source": "src/index.js",
-  "main": "src/index.js",
+  "source": "index.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest",
     "build": "parcel build",
